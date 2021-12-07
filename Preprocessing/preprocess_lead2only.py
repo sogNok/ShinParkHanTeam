@@ -68,6 +68,7 @@ is_normal = True
 decode_signal(path, data, is_normal)
 
 df = pd.DataFrame(data)
+df = df.sample(frac=1).reset_index(drop=True)
 df.to_csv('train.csv', index=False)
 
 
@@ -93,3 +94,7 @@ print('Normal\n')
 path = './data/validation/normal/'
 is_normal = True
 decode_signal(path, data, is_normal)
+
+df = pd.DataFrame(data)
+df = df.sample(frac=1).reset_index(drop=True)
+df.to_csv('validation.csv', index=False)
