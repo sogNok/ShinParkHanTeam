@@ -1,3 +1,5 @@
+### all, 8 버전의 경우 판다스 변환과정 중 오류 발생 -> 수정 중
+
 * Rhytm wave 5000으로 통일
 * data shuffle 기능 추가
 * all, only-2, 8 version 추가  
